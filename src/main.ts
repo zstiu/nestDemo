@@ -10,7 +10,7 @@ async function bootstrap(): Promise<void> {
   const swaggerOption = new DocumentBuilder()
     .addBearerAuth()
     .setTitle('')
-    .setDescription('fsg api')
+    .setDescription('api')
     .setVersion('1.0')
     .build()
   const document = SwaggerModule.createDocument(app, swaggerOption)

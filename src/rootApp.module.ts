@@ -6,23 +6,9 @@ import { UserEntity } from './entities/user/user.entity'
 import { RootAppController } from './rootApp.controller'
 import { RootAppService } from './rootApp.service'
 
-// change the options to your mysql database options
-const databaseOptions: TypeOrmModuleOptions = {
-  type: 'mysql',
-  host: '127.0.0.1',
-  port: 3306,
-  username: 'root',
-  password: '123456',
-  database: 'mysql',
-  entities: [UserEntity],
-  autoLoadEntities: true
-}
-
 @Module({
-  imports: [UserModule, TypeOrmModule.forRoot(databaseOptions)],
+  imports: [UserModule],
   controllers: [RootAppController],
   providers: [RootAppService]
 })
-export class RootAppModule {
-  constructor(private readonly connection: Connection) {}
-}
+export class RootAppModule {}
