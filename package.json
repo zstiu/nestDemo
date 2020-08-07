@@ -35,7 +35,7 @@
     "@types/lodash": "^4.14.150",
     "app-root-path": "^3.0.0",
     "change-case": "^4.1.1",
-    "class-transformer": "^0.2.3",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "dotenv": "^8.2.0",
     "git-cz": "^4.3.1",
